@@ -33,8 +33,8 @@ class _WebViewPageState extends State<WebViewPage> {
     controller
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..setBackgroundColor(const Color(0x00000000))
-      ..setNavigationDelegate(
-        NavigationDelegate(
+      ..setNavigationDelegate(  
+        NavigationDelegate( 
           onProgress: (int progress) {
             debugPrint('WebView is loading (progress : $progress%)');
           },
