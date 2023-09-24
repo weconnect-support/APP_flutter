@@ -28,7 +28,7 @@ class _WebViewPageState extends State<WebViewPage> {
     }
 
     final WebViewController controller =
-    WebViewController.fromPlatformCreationParams(params);
+        WebViewController.fromPlatformCreationParams(params);
 
     controller
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
@@ -67,7 +67,7 @@ class _WebViewPageState extends State<WebViewPage> {
           );
         },
       )
-      ..loadRequest(Uri.parse('https://ss-front.noe.systems/'));
+      ..loadRequest(Uri.parse('https://ssangsang.weconnect.support'));
 
     if (controller.platform is AndroidWebViewController) {
       AndroidWebViewController.enableDebugging(true);
